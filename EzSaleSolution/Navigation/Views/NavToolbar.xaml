@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="Navigation.Views.NavToolbar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Navigation.Views"
+             mc:Ignorable="d" >
+
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBox TextAlignment="Center" Text="Seach by tag"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button Content="DashBoard" />
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button Content="Business Intelligence"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Button Content="Register"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Button Content="Booking"/>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Button Content="Customers"/>
+        </Grid>
+        <Grid Grid.Row="6">
+            <Button Content="Reports"/>
+        </Grid>
+        <Grid Grid.Row="7">
+            <Button Content="Administration"/>
+        </Grid>
+        <Grid Grid.Row="8">
+            <ComboBox>
+                <ComboBoxItem IsSelected="True">Employees</ComboBoxItem>
+                <ComboBoxItem Tag="add">Employees Collection</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="9">
+            <Button Content="Catalog"/>
+        </Grid>
+        <Grid Grid.Row="10">
+            <Button Content="Marketing"/>
+        </Grid>
+        <Grid Grid.Row="11">
+            <Button Content="Accounting"/>
+        </Grid>
+        <Grid Grid.Row="12">
+            <Button Content="Setting"/>
+        </Grid>
+        <Grid Grid.Row="13">
+            <Button Content="Company"/>
+        </Grid>
+        <Grid Grid.Row="14">
+            <Button Content="Booking settings"/>
+        </Grid>
+        <Grid Grid.Row="15">
+            <Button Content="Advanced setting"/>
+        </Grid>
+        <Grid Grid.Row="16">
+            <Button />
+        </Grid>
+        <Grid Grid.Row="17">
+            <Button Content="&lt;" />
+        </Grid>
+    </Grid>
+</UserControl>
