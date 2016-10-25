@@ -20,10 +20,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzSale.Models", "EzSale.Models\EzSale.Models.csproj", "{CD96E088-B4B1-4CB2-9E0B-57263C255837}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{B958E8B1-7A2B-4EF9-B050-185293984FEB}"
+	ProjectSection(SolutionItems) = preProject
+		EmployeesModule\packages.config = EmployeesModule\packages.config
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationModule", "Navigation\NavigationModule.csproj", "{9CF9AD2F-6233-4F36-920D-3A8106F01E6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeModule", "EmployeeModule\EmployeeModule.csproj", "{D4E4FAF6-F130-4247-9EFA-829EC8E9CA7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{D4E4FAF6-F130-4247-9EFA-829EC8E9CA7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -16,7 +16,8 @@ namespace EzSale.Infrastructure
 
         public ModuleBase(IUnityContainer container, IRegionManager regionManager)
         {
-
+            Container = container;
+            RegionManager = regionManager;
         }
 
         public void Initialize()

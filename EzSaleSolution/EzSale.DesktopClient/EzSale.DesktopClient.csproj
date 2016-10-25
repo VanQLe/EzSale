@@ -139,6 +139,50 @@
   <ItemGroup>
     <Resource Include="Images\SettingLogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FlagLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ColorWheel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Employees\Employees.csproj">
+      <Project>{d4e4faf6-f130-4247-9efa-829ec8e9ca7d}</Project>
+      <Name>Employees</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.ClientService\EzSale.ClientService.csproj">
+      <Project>{744492d7-6eff-4f84-b25d-fcc2fe049efe}</Project>
+      <Name>EzSale.ClientService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.DataAccessLayer\EzSale.DataAccessLayer.csproj">
+      <Project>{5e2f979e-fe0b-4c3d-b439-3249d6c4e98b}</Project>
+      <Name>EzSale.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.Infrastructure\EzSale.Infrastructure.csproj">
+      <Project>{5fdec554-505d-4fde-8ff7-90e143274091}</Project>
+      <Name>EzSale.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.Maintenance\EzSale.Maintenance.csproj">
+      <Project>{a73884f7-8a51-4d9d-b6f0-f32fa4dc194d}</Project>
+      <Name>EzSale.Maintenance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.Models\EzSale.Models.csproj">
+      <Project>{cd96e088-b4b1-4cb2-9e0b-57263c255837}</Project>
+      <Name>EzSale.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.Shell.Core\EzSale.Shell.Core.csproj">
+      <Project>{26ae40e8-b811-4c3f-9a61-afbcdfc6ebe0}</Project>
+      <Name>EzSale.Shell.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzSale.Shell.WPF\EzSale.Shell.WPF.csproj">
+      <Project>{929c4380-6ebc-49c4-acad-bdffec9ab1ac}</Project>
+      <Name>EzSale.Shell.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Navigation\NavigationModule.csproj">
+      <Project>{9cf9ad2f-6233-4f36-920d-3a8106f01e6b}</Project>
+      <Name>NavigationModule</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

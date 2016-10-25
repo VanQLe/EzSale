@@ -80,7 +80,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IView.cs" />
+    <Compile Include="Navigation\IView.cs" />
     <Compile Include="IViewModel.cs" />
     <Compile Include="ModuleBase.cs" />
     <Compile Include="Navigation\CancelButton.xaml.cs">

@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Practices.Unity;
+using Prism.Modularity;
+using EmployeeModule;
 
 namespace EzSale.DesktopClient
 {
@@ -19,9 +21,17 @@ namespace EzSale.DesktopClient
 
         protected override void InitializeShell()
         {
+            App.Current.MainWindow = (Window)Shell;
             Application.Current.MainWindow.Show();
         }
 
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            ModuleCatalog catalog = new ModuleCatalog();
+            catalog.AddModule(typeof(EmployeesMod));
+            
+            return catalog;
+        }
 
     }//end class
 }//end namespace

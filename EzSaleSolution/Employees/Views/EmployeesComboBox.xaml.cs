@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace EmployeeModule.Views
 {
     /// <summary>
-    /// Interaction logic for EmployeesCollectionView.xaml
+    /// Interaction logic for EmployeesComboBox.xaml
     /// </summary>
-    public partial class EmployeesCollectionView : UserControl
+    public partial class EmployeesComboBox : UserControl
     {
-        public EmployeesCollectionView()
+        public EmployeesComboBox()
         {
             InitializeComponent();
         }

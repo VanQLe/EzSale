@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EzSale.DesktopClient.Views"
         xmlns:NavToolbar="clr-namespace:Navigation.Views;assembly=Navigation"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:infrast="clr-namespace:EzSale.Infrastructure;assembly=EzSale.Infrastructure"
         mc:Ignorable="d"
         Title="MainWindow">
     <Grid Name="MainGrid">
@@ -49,11 +51,15 @@
                 <ColumnDefinition Width="6*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="0" Name="NavToolBarGrid">
-                <ContentControl>
-                    <NavToolbar:NavToolbar />
-                </ContentControl>
+            <Grid Grid.Column="0" Name="ToolbarGrid">
+                <ItemsControl prism:RegionManager.RegionName="{x:Static infrast:RegionNames.ToolbarRegion }" />
             </Grid>
+
+            <Grid Name="ContentRegionGrid" Grid.Column="1">
+                <ContentControl  prism:RegionManager.RegionName="{x:Static infrast:RegionNames.ContentRegion }" />
+            </Grid>
+            
+            
         </Grid>
 
 
